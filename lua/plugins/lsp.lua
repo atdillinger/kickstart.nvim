@@ -143,6 +143,7 @@ return {
         -- clangd = {},
         -- gopls = {},
         pyright = {},
+        jsonls = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -181,6 +182,8 @@ return {
           require('sqls').on_attach(client, bufnr)
         end,
       }
+      require('lspconfig').yamlls.setup {}
+
       -- You can add other tools here that you want Mason to install
       -- for you, so that they are available from within Neovim.
       local ensure_installed = vim.tbl_keys(servers or {})
