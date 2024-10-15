@@ -6,9 +6,8 @@ return {
       spec = {
         { '<leader>b', group = 'buffers' },
         { '<leader>c', group = 'code', mode = { 'n', 'x' } },
-        { '<leader>g', group = 'lazygit' },
-        -- { '<leader>q', group = 'quit' },
-        { '<leader>r', group = 'rename' },
+        { '<leader>g', group = 'git' },
+        -- { '<leader>r', group = 'rename' },
         { '<leader>s', group = 'search' },
         { '<leader>t', group = 'toggle' },
       },
