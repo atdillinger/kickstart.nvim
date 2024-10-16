@@ -12,8 +12,7 @@ return {
       },
     },
   },
-  { 'Bilal2453/luvit-meta', lazy = true
-  },
+  { 'Bilal2453/luvit-meta', lazy = true },
   {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
@@ -167,6 +166,14 @@ return {
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
               -- diagnostics = { disable = { 'missing-fields' } },
             },
+          },
+        },
+      }
+      require('lspconfig').ruff_lsp.setup {
+        init_options = {
+          settings = {
+            -- Any extra CLI arguments for `ruff` go here.
+            args = {},
           },
         },
       }
