@@ -8,6 +8,9 @@ return {
       '<leader>gw',
       '<cmd>lua require("telescope").extensions.git_worktree.git_worktrees()<cr>',
       desc = 'show worktees',
+      -- <Enter> - switches to that worktree
+      -- <c-d> - deletes that worktree
+      -- <c-f> - toggles forcing of the next deletion
     },
     {
       '<leader>ga',
