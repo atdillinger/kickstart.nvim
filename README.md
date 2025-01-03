@@ -14,3 +14,32 @@
 ## Git Worktrees
 1. `git clone --bare`
 1. use `leader+ga` and `leader+gw`
+
+## Dadbod UI
+
+### SQLite
+
+```json
+{
+    "url": "sqlite:<path>/<file>.db",
+    "name": "example"
+}
+```
+
+### JDBC
+
+```json
+{
+    "url": "jdbc:sqlserver://;serverName=<example>;databaseName=<name>",
+    "name": "example"
+}
+```
+
+### SQLServer
+
+```json
+{
+    "url": "sqlserver://;serverName=<example>;databaseName=<name>;user=<example>;password=<example>",
+    "name": "example"
+}
+```
