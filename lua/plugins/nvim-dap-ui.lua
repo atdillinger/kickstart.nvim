@@ -6,7 +6,7 @@ return {
   },
   -- stylua: ignore
   keys = {
-    { '<leader>tD', function() require('dapui').toggle {} end, desc = 'Dap UI', },
+    { '<leader>dD', function() require('dapui').toggle {} end, desc = 'Dap UI', },
     -- { "<leader>de", function() require("dapui").eval() end, desc = "Eval", mode = {"n", "v"} },
   },
   opts = {},

@@ -11,6 +11,6 @@ return {
     -- 'DBUIFindBuffer',
   },
   keys = {
-    { '<leader>td', '<cmd>DBUIToggle<cr>', desc = 'dadbad' },
+    { '<leader>D', '<cmd>DBUIToggle<cr>', desc = 'dadbad' },
   },
 }

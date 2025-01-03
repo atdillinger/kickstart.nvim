@@ -6,8 +6,8 @@ return {
       require('outline').setup {}
     end,
     keys = {
-      { '<leader>to', '<cmd>Outline<CR>', desc = 'Toggle Outline', silent = true },
-      { '<leader>tr', '<cmd>OutlineRefresh<CR>', desc = 'Outline Refresh', silent = true },
+      { '<leader>o', '<cmd>Outline<CR>', desc = 'Toggle Outline', silent = true },
+      { '<leader>O', '<cmd>OutlineRefresh<CR>', desc = 'Outline Refresh', silent = true },
     },
   },
 }

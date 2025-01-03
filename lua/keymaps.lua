@@ -29,13 +29,14 @@ vim.keymap.set('n', '<S-l>', '<cmd>bnext<cr>', { desc = 'Next Buffer' })
 vim.keymap.set('v', '<', '<gv')
 vim.keymap.set('v', '>', '>gv')
 -- new file
--- vim.keymap.set('n', '<leader>fn', '<cmd>enew<cr>', { desc = 'New File' })
+vim.keymap.set('n', '<leader>f', '', { desc = 'file' })
+vim.keymap.set('n', '<leader>fn', '<cmd>enew<cr>', { desc = 'New File' })
 -- quit
 -- vim.keymap.set('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'Quit All' })
 vim.keymap.set({ 'i', 'x', 'n', 's' }, '<C-s>', '<cmd>w<cr><esc>', { desc = 'Save File' })
 -- Clear search, diff update and redraw
 -- taken from runtime/lua/_editor.lua
-vim.keymap.set('n', '<leader>r', '<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>', { desc = 'Redraw / Clear hlsearch' })
+vim.keymap.set('n', '<leader>r', '<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>', { desc = 'Redraw / Clear hlsearch / Diff Updat' })
 
 -- my stuff
 -- greatest remap ever - Prime
