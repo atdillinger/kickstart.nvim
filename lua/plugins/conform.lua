@@ -3,16 +3,6 @@ return {
     'stevearc/conform.nvim',
     event = { 'BufWritePre' },
     cmd = { 'ConformInfo' },
-    -- keys = {
-    --   {
-    --     '<leader>f',
-    --     function()
-    --       require('conform').format { async = true, lsp_format = 'fallback' }
-    --     end,
-    --     mode = '',
-    --     desc = '[F]ormat buffer',
-    --   },
-    -- },
     opts = {
       notify_on_error = false,
       format_on_save = function(bufnr)
@@ -34,7 +24,7 @@ return {
       formatters_by_ft = {
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
-        python = { 'ruff' },
+        python = { 'ruff-lsp' },
         -- sh = { 'shfmt' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
@@ -45,9 +35,9 @@ return {
       {
         '<leader>ff',
         function()
-          require('conform').format { async = true }
+          require('conform').format { async = true, lsp_format = 'fallback' }
         end,
-        mode = 'n',
+        mode = '',
         desc = 'Format buffer',
       },
     },
