@@ -31,8 +31,9 @@ vim.keymap.set('v', '>', '>gv')
 -- new file
 vim.keymap.set('n', '<leader>f', '', { desc = 'file' })
 vim.keymap.set('n', '<leader>fn', '<cmd>enew<cr>', { desc = 'New File' })
+
 -- quit
--- vim.keymap.set('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'Quit All' })
+vim.keymap.set('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'Quit All' })
 vim.keymap.set({ 'i', 'x', 'n', 's' }, '<C-s>', '<cmd>w<cr><esc>', { desc = 'Save File' })
 -- Clear search, diff update and redraw
 -- taken from runtime/lua/_editor.lua
