@@ -33,6 +33,7 @@ vim.keymap.set('n', '<leader>f', '', { desc = 'file' })
 vim.keymap.set('n', '<leader>fn', '<cmd>enew<cr>', { desc = 'New File' })
 
 -- quit
+vim.keymap.set('n', '<leader>qq', '<cmd>q<cr>', { desc = 'Quit Current' })
 vim.keymap.set('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'Quit All' })
 vim.keymap.set('n', '<leader>qQ', '<cmd>qa!<cr>', { desc = 'Force Quit All' })
 
