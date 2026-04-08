@@ -169,14 +169,14 @@ return {
           },
         },
       }
-      require('lspconfig').ruff.setup {
+      vim.lsp.config('ruff', {
         init_options = {
           settings = {
             -- Any extra CLI arguments for `ruff` go here.
             args = {},
           },
         },
-      }
+      })
 
       -- Ensure the servers and tools above are installed
       --  To check the current status of installed tools and/or manually install
@@ -184,13 +184,13 @@ return {
       --    :Mason
       --
       --  You can press `g?` for help in this menu.
-      require('mason').setup()
-      require('lspconfig').sqls.setup {
+      vim.lsp.config('mason', {})
+      vim.lsp.config('sqls', {
         on_attach = function(client, bufnr)
           require('sqls').on_attach(client, bufnr)
         end,
-      }
-      require('lspconfig').yamlls.setup {}
+      })
+      vim.lsp.config('yamlls', {})
 
       -- You can add other tools here that you want Mason to install
       -- for you, so that they are available from within Neovim.
