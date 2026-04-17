@@ -5,6 +5,15 @@
 ## Mason
 
 - `yaml-language-server`
+- `eslint-lsp`
+- `json-lsp`
+- `lua-language-server`
+- `markdownlint`
+- `prettier`
+- `pyright`
+- `sqlls`
+- `stylua`
+- `yaml-language-server`
 
 ## Quick Start
 - `:qa` to exit

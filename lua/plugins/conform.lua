@@ -25,6 +25,7 @@ return {
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
         python = { 'ruff_format', 'ruff_fix', 'ruff_organize_imports' },
+        sql = { 'sleek' },
         -- sh = { 'shfmt' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
